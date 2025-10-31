@@ -1,0 +1,33 @@
+1.D
+2.B
+3.A
+4.A
+5.B
+6.B
+7.select customer_id, sum(total) as total_pembelian from orders GROUP BY customer_id;
+8.select count(customer_id),customer_id from orders group by customer_id,salesman_id HAVING COUNT(customer_id) > 1;
+8.function no8DeleteArray() {
+  const firstArray = [132, 203, 304, 400, 201];
+  let newArray = [];
+  for (const element of firstArray) {
+    if (element == 400) {
+      continue;
+    }
+    newArray.push(element);
+  }
+  console.log(newArray);
+}
+
+9.
+Teknologi (
+    GO Microservice bisa membagi setiap service
+, Kubernetes Menjalankan setiap service GO,
+ Redis untuk Cache,
+  Api Gateway untuk menyebarkan API,
+  Kafka Untuk message Broker karena bisa menangani banyak event)
+Strategi Scalling (Horizontal Scalling untuk memperluas kebutuhan resource)
+Database Sharding(Menggunakan CouchbaseDB handle req yang banyak)
+
+10.
+    1. Saya memilih untuk memakai RabbitMw untuk menangi Queue
+    2-4 Code Service (Service-email service-register)
